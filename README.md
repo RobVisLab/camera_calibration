@@ -1,13 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-			<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-			<title>Automatic Camera Calibration</title>
-			<meta name="keywords" content="Robot Vision, Robot Vision Group, Robot Vision Lab, Computer Vision, Computational Photography,
- Graz University of Technology, Institute for Computer Graphics and Vision, '.$title.'" />
-			<meta name="description" content="" />
-			<link href="'.$path.'style.css" rel="stylesheet" type="text/css" media="screen" />
-			<link rel="shortcut icon" href="'.$path.'images/rvlab_thumbnail.ico" type="image/x-icon">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link href="readme/style.css" rel="stylesheet" type="text/css" media="screen" />
 </head> 
 <body>
 	<hr />

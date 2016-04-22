@@ -1,0 +1,594 @@
+
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #FFFFFF url(images/img01.gif) repeat-x;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #6E6E6E;
+}
+
+input, textarea {
+	background: #FFFFFF url(images/img09.gif) repeat-x;
+	border: 1px solid #FFFFFF;
+	border-top-color: #A3A3A3;
+	border-left-color: #D6D6D6;
+	font: normal 1em/normal "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #6E6E6E;
+}
+
+h1, h2, h3 {
+	margin-bottom: 1.5em;
+	letter-spacing: 0.01em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1, h1 a, h2, h3{
+	text-decoration: none;
+	color: #414141;
+}
+
+h1 a:hover, h2 a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 38px;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 16px;
+	margin-bottom: 0em;
+	/*font-weight: normal;*/
+	/*color: #939292;*/
+}
+
+p, ul, ol {
+	margin-top: 1.5em;
+	line-height: 190%;
+}
+
+ul, ol {
+	margin-left: 3em;
+}
+
+blockquote {
+	margin-left: 3em;
+	margin-right: 3em;
+}
+
+a {
+	color: #346086;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a img {
+	border: none;
+	margin: 5px;
+}
+
+img.left {
+	float: left;
+	margin-right: 20px;
+}
+
+img.right {
+	float: right;
+	margin-right: 20px;
+}
+
+hr {
+	display: none;
+}
+
+/* Logo */
+
+#logo {
+	width: 870px;
+	height: 115px;
+	margin: 0 auto;
+}
+
+#logo h1, #logo h2 {
+	margin: 0;
+}
+
+#logo h1 {
+	float: left;
+	padding-top: 65px;
+}
+
+#logo h2 {
+	float: right;
+	padding-top: 85px;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+#logo h2, #logo h2 a {
+	color: #939292;
+}
+
+#logo a {
+	text-decoration: none;
+}
+
+/* Table Stuff */
+
+.tablewrapper {
+  position: relative;
+}
+
+#table {
+	display: table;
+	width:80%;
+	border: solid #000000;
+	border-width: medium 0px medium 0px;
+}
+
+.header{
+	display: table-cell;
+	font-style:italic;
+	padding: 10px 3px 10px 3px;
+	border: solid #000000;
+	border-width: 0px 0px thin 0px;
+	line-height: 10px;
+	vertical-align:middle;
+	column-span:all;
+}
+
+.header.colspanned{
+	display: table-cell;
+	font-style:italic;
+	padding: 10px 3px 10px 3px;
+	border: solid #000000;
+	border-width: 0px 0px thin 0px;
+	line-height: 10px;
+	vertical-align:middle;
+	position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  width: 100px;
+}
+
+.row:nth-child(even) {
+	display: table-row;
+	vertical-align:middle;
+	background: rgb(220,220,220);
+	
+	/*border:1px solid #000000;*/
+	border-width:0px 1px 1px 1px;
+	text-align:left;
+	padding:7px;
+	color:#000000;
+}
+
+.row:nth-child(odd) {
+	display: table-row;
+	vertical-align:middle;
+	
+	
+	/*border:1px solid #000000;*/
+	border-width:0px 1px 1px 1px;
+	text-align:left;
+	padding:7px;
+	color:#000000;
+}
+.cell {
+	display: table-cell;
+	padding: 3px;
+}
+
+/* Menu */
+
+#menu {
+	width: 960px;
+	height: 62px;
+	margin: 0 auto;
+	margin-top: 50px;
+	background: #252E3A url(images/img02.jpg) no-repeat;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 21px 0 0 30px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+	padding: 0 20px 0 22px;
+	background: url(images/img03.gif) no-repeat left center;
+}
+
+#menu li.first {
+	background: none;
+}
+
+#menu a {
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+/* Search */
+
+#search {
+	float: right;
+	width: 227px;
+}
+
+#search fieldset {
+	border: none;
+}
+
+#search input {
+	float: left;
+}
+
+#search #s {
+	width: 136px;
+	margin-right: 7px;
+	padding: 2px 5px;
+}
+
+#search #x {
+	background: none;
+	border: none;
+}
+
+/* Banner */
+
+#banner {
+	width: 960px;
+	margin: 0 auto;
+	padding: 8px 0;
+}
+
+/* Page */
+
+#page {
+	width: 900px;
+	margin: 0 auto;
+	padding: 45px 35px 45px 25px;
+	background: url(images/img05.gif) no-repeat;
+}
+
+/* Content */
+
+#content {
+	float: left;
+	width: 900px;
+}
+
+.abstract {
+	padding: 0 20px;
+	color: rgb(80, 80, 80);
+}
+
+.news{
+	border-radius: 40px;
+	background-color:#EEEEEE;
+	margin-bottom: 40px;
+	padding: 40px 40px;
+}
+
+.news .title {
+
+}
+
+.news .entrytitle {
+
+}
+
+.news .entry {
+	padding: 0px 5px 10px 10px;
+}
+/* Posts */
+.post {
+}
+
+.post .title {
+	margin-bottom: 5px;
+	padding: 0 20px;
+}
+
+.post .entry {
+	margin-bottom: 40px;
+	margin-left: 10px;
+	padding: 0px 15px 0px 20px;
+}
+
+.post .entry li {
+	margin-bottom: 5px;
+	padding: 0 15px 0 20px;
+	line-height: 150%;
+}
+
+.post .meta {
+	height: 47px;
+	margin: 20px 0 40px 0;
+	padding: 15px 0 0 20px;
+	background: url(images/img07.gif) no-repeat;
+	line-height: normal;
+}
+
+/* Opportunity Entries */
+.opportunity {
+	border-radius: 40px;
+	background-color:#EEEEEE;
+	margin-bottom: 40px;
+	padding: 40px 40px;
+}
+
+.opportunity .title {
+	margin-bottom: 5px;
+	padding: 0 20px;
+}
+
+.opportunity .entry {
+	margin-bottom: 20px;
+	margin-left: 10px;
+	padding: 0px 15px 0px 20px;
+}
+
+.opportunity .moreinfo {
+	margin-bottom: 20px;
+	margin-left: 10px;
+	padding: 0px 15px 0px 20px;
+}
+
+.opportunity .moreinfo .entry {
+	margin-bottom: 20px;
+	margin-left: 10px;
+	padding: 0px 15px 0px 20px;
+}
+
+.opportunity .entry li {
+	margin-bottom: 0px;
+	padding: 0 5px 0 5px;
+	line-height: 150%;
+}
+
+
+/* Publications */
+.publications {
+}
+
+.publications .title{
+	margin: 0;
+	margin.bottom: 0px;
+	padding: 0px 0px;
+}
+
+.publications .entry {
+	margin-bottom: 40px;
+	margin-left: 10px;
+	padding: 0px 15px 0px 20px;
+}
+
+.publications .entry li {
+	margin-bottom: 10px;
+	padding: 0px 0px 0 10px;
+	line-height: 150%;
+}
+
+.publications .entry h2 {
+	color: rgb(50, 102, 142);
+	padding-top: 5px;
+	font-size: 20px;
+	font-family: verdana, arial, sans-serif;
+	font-weight: normal;
+}
+
+/* .publications .title h2 {
+	padding-top: 5px;
+	margin-bottom: 5px;
+	font-size: 50px;
+	font-weight: normal;
+} */
+
+/* div.publications h2 {
+	color: rgb(50, 102, 142);
+	font-size:120%;
+	font-family: verdana, arial, sans-serif;
+	font-weight:bold;
+} */
+
+div.publications ol li {
+	margin-bottom: 0.5em;
+}
+
+.publications .authors {
+	display: block;
+}
+
+.publications .title {
+	font-weight: bold;
+}
+
+.publications a.title {
+	color:#666666;
+	font-weight: bold;
+}
+
+.publications .school {
+}
+
+.publications .in {
+	font-style: italic;
+}
+
+.publications .pages {
+	font-style: italic;
+}
+
+.publications .publisher {
+	font-style: italic;
+}
+
+.publications .year {
+	font-style: italic;	
+}
+
+.publications .address {
+}
+
+.publications .note {
+	font-style: italic;	
+	color: rgb(50, 102, 142);;
+}
+
+.publications .vol {
+}
+
+/* Projects */
+.projects {
+}
+
+.projects .title {
+	margin: 0;
+	padding: 0 20px;
+}
+
+.projects .entry {
+	margin-bottom: 70px;
+	margin-left: 10px;
+	padding: 0px 15px 0px 20px;
+}
+
+.projects .entry li {
+	margin-bottom: 15px;
+	padding: 0 15px 0 20px;
+	line-height: 150%;
+}
+
+.projects .meta {
+	height: 47px;
+	margin: 20px 0 40px 0;
+	padding: 15px 0 0 20px;
+	background: url(images/img07.gif) no-repeat;
+	line-height: normal;
+}
+
+
+/* Sidebar */
+
+#sidebar {
+	float: right;
+	width: 253px;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+}
+
+#sidebar li {
+	margin-bottom: 40px;
+	padding: 0 15px 0 20px;
+}
+
+#sidebar li ul {
+}
+
+#sidebar li li {
+	margin: 0;
+	padding: 5px 0;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+#sidebar li h2 {
+	margin-bottom: 15px;
+	font-size: 18px;
+}
+
+/* Calendar */
+
+#sidebar #calendar {
+	padding: 0;
+	background: url(images/img08.jpg) no-repeat;
+}
+
+#calendar caption {
+	margin: -20px auto 0 auto;
+	text-align: center;
+	font-weight: bold;
+}
+
+#calendar table {
+	margin: 0 auto;
+	caption-side: bottom;
+}
+
+#calendar thead th {
+	width: 31px;
+	height: 40px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+#calendar tbody td {
+	width: 31px;
+	height: 31px;
+	text-align: center;
+	color: #9E9E9E;
+}
+
+#calendar tfoot td {
+	padding-top: 20px;
+	font-weight: bold;
+}
+
+#calendar #next {
+	text-align: right;
+}
+
+/* Footer */
+
+#footer {
+	clear: both;
+	width: 900px;
+	height: 50px;
+	margin: 0 auto;
+	padding: 45px 35px 45px 25px;
+	background: url(images/img05.gif) no-repeat;
+}
+
+#footer p {
+	margin: 0;
+	line-height: normal;
+	color: #B4B4B4;
+}
+
+#footer a {
+	color: #B4B4B4;
+}
+
+#footer .legal {
+	float: left;
+}
+
+#footer .credit {
+	float: right;
+}
