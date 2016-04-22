@@ -118,7 +118,8 @@
 					&nbsp;
 					  <a target="video" href="https://youtu.be/RM78k8M2qiw" ><img src="http://rvlab.icg.tugraz.at/images/youtube.png" height=15px/></a>
 					  <a target="_blank" class="title" href="http://rvlab.icg.tugraz.at/documents/ferstl/bmvc15_poster.pdf">[supp]</a> <br>
-					<span class="authors"><a href=http://rvlab.icg.tugraz.at/personal_page/personal_page_ferstl.html>David Ferstl</a>, <a href=http://rvlab.icg.tugraz.at/personal_page/personal_page_christian.htm>Christian Reinbacher</a>, <a href=http://rvlab.icg.tugraz.at/personal_page/personal_page_gernot.html>Gernot Riegler</a>, Matthias Ruether, and <a href=http://www.icg.tugraz.at/Members/author/bischof target=_blank>Horst Bischof</a></span>In <span class="in">Proceedings of British Machine Vision Conference, (BMVC)</span>, <span class="year">2015</span> <br/> Abstract </a><br />
+					<span class="authors"><a href=http://rvlab.icg.tugraz.at/personal_page/personal_page_ferstl.html>David Ferstl</a>, <a href=http://rvlab.icg.tugraz.at/personal_page/personal_page_christian.htm>Christian Reinbacher</a>, <a href=http://rvlab.icg.tugraz.at/personal_page/personal_page_gernot.html>Gernot Riegler</a>, Matthias Ruether, and <a href=http://www.icg.tugraz.at/Members/author/bischof target=_blank>Horst Bischof</a></span><br>
+					In <span class="in">Proceedings of British Machine Vision Conference, (BMVC)</span>, <span class="year">2015</span> <br/> Abstract </a><br />
 					<div class="abstract" id="ferstl2015a" style="display: none">
 					We present a novel method for an automatic calibration of modern consumer
 					 Time-of-Flight cameras. Usually, these sensors come equipped with an integrated color
