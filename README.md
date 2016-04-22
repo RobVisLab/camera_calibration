@@ -1,9 +1,7 @@
 
 <body>
 	<hr />
-	<!-- start page -->
 	<div id="page">
-		<!-- start content -->
 		<div id="content">
 			<div class="post">
 				<h1 class="title">Automatic Camera Calibration</h1>
@@ -21,7 +19,7 @@
 				<div class="entry">
 					The used calibration target consists of a central marker and
 					circular patterns:<br></br> <img alt="Calibration Target"
-						src="calibration/struc_patt.png" width=300px><br></br> Our
+						src="http://rvlab.icg.tugraz.at/project_page/project_tofusion/calibration/struc_patt.png" width=300px><br></br> Our
 					automatic feature detection starts by searching for the central
 					marker and then iteratively refining the circular markers around
 					the central marker (depticted as black dashed line). Compared to
@@ -42,9 +40,9 @@
 					target is detected in the gray value image and reprojected to the
 					corresponding depth image from a Microsoft Kinect v2.0: <br></br> <img
 						alt="Detection result gray image"
-						src="calibration/detection_rgb.jpg" height=270px> <img
+						src="http://rvlab.icg.tugraz.at/project_page/project_tofusion/calibrationcalibration/detection_rgb.jpg" height=270px> <img
 						alt="Detection result projected to depth image"
-						src="calibration/projection_depth.jpg" height=270px><br></br>
+						src="http://rvlab.icg.tugraz.at/project_page/project_tofusion/calibrationcalibration/projection_depth.jpg" height=270px><br></br>
 				</div>
 			</div>
 			<div class="post">
