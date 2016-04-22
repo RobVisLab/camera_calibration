@@ -49,6 +49,7 @@
 						src="http://rvlab.icg.tugraz.at/project_page/project_tofusion/calibration/projection_depth.jpg" height=270px><br></br>
 				</div>
 			</div>
+			<br><br>
 			<div class="post">
 				<h2 class="title">How to use the code</h2>
 				<div class="entry">
