@@ -1,4 +1,14 @@
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+			<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+			<title>Automatic Camera Calibration</title>
+			<meta name="keywords" content="Robot Vision, Robot Vision Group, Robot Vision Lab, Computer Vision, Computational Photography,
+ Graz University of Technology, Institute for Computer Graphics and Vision, '.$title.'" />
+			<meta name="description" content="" />
+			<link href="'.$path.'style.css" rel="stylesheet" type="text/css" media="screen" />
+			<link rel="shortcut icon" href="'.$path.'images/rvlab_thumbnail.ico" type="image/x-icon">
+</head> 
 <body>
 	<hr />
 	<div id="page">
@@ -40,9 +50,9 @@
 					target is detected in the gray value image and reprojected to the
 					corresponding depth image from a Microsoft Kinect v2.0: <br></br> <img
 						alt="Detection result gray image"
-						src="http://rvlab.icg.tugraz.at/project_page/project_tofusion/calibrationcalibration/detection_rgb.jpg" height=270px> <img
+						src="http://rvlab.icg.tugraz.at/project_page/project_tofusion/calibration/detection_rgb.jpg" height=270px> <img
 						alt="Detection result projected to depth image"
-						src="http://rvlab.icg.tugraz.at/project_page/project_tofusion/calibrationcalibration/projection_depth.jpg" height=270px><br></br>
+						src="http://rvlab.icg.tugraz.at/project_page/project_tofusion/calibration/projection_depth.jpg" height=270px><br></br>
 				</div>
 			</div>
 			<div class="post">
