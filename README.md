@@ -10,7 +10,7 @@
 			<div class="post">
 				<h1 class="title">Automatic Camera Calibration</h1>
 				<div class="entry">
-					This page accompanies our paper <a href="/documents/ferstl/bmvc15_final.pdf">[1]</a> on
+					This page accompanies our paper <a href="http://rvlab.icg.tugraz.at/documents/ferstl/bmvc15_final.pdf">[1]</a> on
 					automatic calibration of depth cameras. The presented calibration
 					target and automatic feature extraction are not limited to depth
 					cameras but can also be used for conventional cameras. The provided
