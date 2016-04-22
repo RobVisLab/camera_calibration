@@ -10,7 +10,7 @@
 			<div class="post">
 				<h1 class="title">Automatic Camera Calibration</h1>
 				<div class="entry">
-					This page accompanies our paper <a href="http://rvlab.icg.tugraz.at/documents/ferstl/bmvc15_final.pdf">[1]</a> on
+					This page accompanies our paper <a target="_blank" href="http://rvlab.icg.tugraz.at/documents/ferstl/bmvc15_final.pdf">[1]</a> on
 					automatic calibration of depth cameras. The presented calibration
 					target and automatic feature extraction are not limited to depth
 					cameras but can also be used for conventional cameras. The provided
@@ -87,26 +87,13 @@
 			</div>
 			<br><br>
 			<div class="post">
-				<h2 class="title">How to cite the materials on this website</h2>
+				<h2 class="title">How to cite the materials</h2>
 				<div class="entry">
 					We grant permission to use the code on this website. If you if you
 					use the code in your own publication, we request that you cite our
 					paper <a href="#publications">[1]</a>. If you want to cite this
 					website, please use the URL
 					"http://rvlab.icg.tugraz.at/calibration/".
-				</div>
-			</div>
-			<br><br>
-			<div class="post">
-				<h2 class="title">Software Download</h2>
-				<div class="entry">
-					Matlab code for automatic feature detection <a
-						href="calibration/addon_bouguet_0.1.zip"
-						onclick="var that=this;
-                                _gaq.push(['_trackEvent','Download','ZIP', this.href]);
-                                setTimeout(function(){location.href=that.href;},200);
-                                return false;">
-						addon_bouguet.zip</a>. This also includes the tool to make the calibration target.
 				</div>
 			</div>
 			<br><br>
