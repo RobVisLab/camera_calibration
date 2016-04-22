@@ -85,6 +85,7 @@
 					<i>target = make_target(240,5,-18:18,-10:10);</i>
 				</div>
 			</div>
+			<br><br>
 			<div class="post">
 				<h2 class="title">How to cite the materials on this website</h2>
 				<div class="entry">
@@ -95,6 +96,7 @@
 					"http://rvlab.icg.tugraz.at/calibration/".
 				</div>
 			</div>
+			<br><br>
 			<div class="post">
 				<h2 class="title">Software Download</h2>
 				<div class="entry">
@@ -107,23 +109,30 @@
 						addon_bouguet.zip</a>. This also includes the tool to make the calibration target.
 				</div>
 			</div>
-			<div class="post">
-				<h2 class="title">Version History</h2>
-				<div class="entry">
-					<ul>
-						<li> v 0.1: Initial Release (2015-07-27)
-					</ul>
-				</div>
-			</div>
+			<br><br>
 			<div class="publications" id="publications">
 				<h2 class="title">References</h2>
-				<?php
-				$_SESSION['project']='calibration';
-					require_once('../../project_page/bib/bibtex2html.php');
-					bibfile2html('../../project_page/bib/bibliography_conferences.bib',array(	
-														 'inproceedings' => 'Conference Papers'), false, false, false);
-    				unset($_SESSION['project']);
-				?>
+					<ol>
+					<li>
+					 <a target="_blank" target="_blank" class="title" href="http://rvlab.icg.tugraz.at/documents/ferstl/bmvc15_final.pdf">Learning Depth Calibration of Time-of-Flight Cameras</a>
+					&nbsp;
+					  <a target="video" href="https://youtu.be/RM78k8M2qiw" ><img src="readme/youtube.png" height=15px/></a>
+					  <a target="_blank" class="title" href="http://rvlab.icg.tugraz.at/documents/ferstl/bmvc15_poster.pdf">[supp]</a>
+					<span class="authors"><a href=http://rvlab.icg.tugraz.at/personal_page/personal_page_ferstl.html>David Ferstl</a>, <a href=http://rvlab.icg.tugraz.at/personal_page/personal_page_christian.htm>Christian Reinbacher</a>, <a href=http://rvlab.icg.tugraz.at/personal_page/personal_page_gernot.html>Gernot Riegler</a>, Matthias Ruether, and <a href=http://www.icg.tugraz.at/Members/author/bischof target=_blank>Horst Bischof</a></span>In <span class="in">Proceedings of British Machine Vision Conference, (BMVC)</span>, <span class="year">2015</span> <br/> [abstract]</a><br />
+					<div class="abstract" id="ferstl2015a" style="display: none">
+					We present a novel method for an automatic calibration of modern consumer
+					 Time-of-Flight cameras. Usually, these sensors come equipped with an integrated color
+					 camera. Albeit they deliver acquisitions at high frame rates they usually suffer
+					 from incorrect calibration and low accuracy due to multiple error sources. Using
+					 information from both cameras together with a simple planar target, we will show
+					 how to accurately calibrate both color and depth camera and tackle most error
+					 sources inherent to Time-of-Flight technology in a unified calibration framework.
+					 Automatic feature detection minimizes user interaction during calibration. We
+					 utilize a Random Regression Forest to optimize the manufacturer supplied depth 
+					 measurements. We show the improvements to commonly used depth calibration
+					 methods in a qualitative and quantitative evaluation on multiple scenes acquired
+					 by an accurate reference system for the application of dense 3D reconstruction.</div></li>
+					</ol>
 			</div>
 		</div>
 	</div>
