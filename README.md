@@ -1,125 +1,128 @@
---------------------------------------------------------------------------------
-| Automatic feature extraction for camera calibration                          |
-| D. Ferstl, C. Reinbacher, G. Riegler, M. Rüther, H. Bischof                  |
-| Graz University of Technology, Institute for Computer Vision and Graphics    |
-| (c) 2015                                                                     |
---------------------------------------------------------------------------------
 
-This software accompanies our paper
-
-@inproceedings{ferstl2015,
-  author = {David Ferstl and Christian Reinbacher and Gernot Riegler and 
-            Matthias Ruether and Horst Bischof},
-  title = {Learning Depth Calibration of Time-of-Flight Cameras},
-  booktitle = {Proceedings of British Machine Vision Conference, (BMVC)},
-  year = {2015},
-  month = {September},
-} 
-
-The presented calibration target and automatic feature extraction are not
-limited to depth cameras but can also be used for conventional cameras. The
-provided code is designed to be used as an addon to the widely known camera
-calibration toolbox of [1].
-
-The used calibration target consists of a central marker and circular feature
-points. Our automatic feature detection starts by searching for the central
-marker and then iteratively refining the circular markers around the central
-marker. Compared to standard checkerboard targets, our methods has the following
-advantages:
-- Target does not have to be visible as a whole
-- Detection of groups of circular patterns is more robust to perspective 
-  distortions than line crossings
-- Feature detection is more accurate for low-resolution cameras (like ToF or 
-  Event Cameras)
-
---------------------------------------------------------------------------------
-| How to use the code                                                          |
---------------------------------------------------------------------------------
-The provided source code should be used as an addon the the Bouguet Camera 
-Calibration Toolbox. Installation therefore amounts to:
-- Downloading of the latest toolbox from [1]
-- Downloading and extracting of our addon in the same folder
-- Running autocalibration.m and selecting the images from testdata/image_xxx.jpg 
-  starts the mono calibration of the camera.
-- The calibration target can be created using the make_target.m function. 
-  Remember to measure it after printing!
-- To use it with the GUI of the Toolbox, simply start calib_gui_normal_auto.m 
-  which asks for the target parameters interactively.
-- Stereo calibration requires the use of calib_stereo_auto.m instead of 
-  calib_stereo.m because our method does not detect all grid points in all 
-  images!
-
-The following parameters have to be set:
-- parameters.approx_marker_width_pixels: Approximate minimum size of the center 
-  marker in pixels
-- parameters.grid_width_mm: Grid width (distance between points) in millimeters
-- parameters.checker_aspect_ratio: Aspect ratio (= height/width)
-- parameters.grid_coordinates_h:Horizontal grid dimensions (i.e. -11:11)
-- parameters.grid_coordinates_v: Vertical grid dimensions (i.e. -18:16)
-
-The target can be created by using the function function template = make_target
-(grid_width_pixels, grid_width_mm, grid_coordinates_h, grid_coordinates_v),
-i.e.: target = make_target(240,5,-18:18,-10:10);
-
---------------------------------------------------------------------------------
-| Version History                                                              |
---------------------------------------------------------------------------------
-- v 0.1: Initial Release
-
-
---------------------------------------------------------------------------------
-| References                                                                   |
---------------------------------------------------------------------------------
-
-[1]: http://www.vision.caltech.edu/bouguetj/calib_doc/
-
-The inverse compositional algorithm has been taken from:
---------------------------------------------------------------------------------
-URL: http://www.ri.cmu.edu/projects/project_515.html
-
-Bibtex reference:
-
-@article{Baker_2004_4293,
-	author = "Simon Baker and Iain Matthews",
-	title = "Lucas-Kanade 20 Years On: A Unifying Framework Part 1: The Quantity 
-	Approximated, the Warp Update Rule, and the Gradient Descent Approximation",
-	journal = "International Journal of Computer Vision",
-	year = "2004"
-}
-
-The used files are:
-- hessian.m
-- homo_ic.m
-- init_h.m
-- jacobian_h.m
-- quadtobox_h.m
-- sd_images.m
-- sd_update.m
-- warp_h.m
-
-The feature detection is based on ARToolkitPlus, taken from:
---------------------------------------------------------------------------------
-URL: http://studierstube.icg.tugraz.at/handheld_ar/artoolkitplus.php
-
-@inproceedings{Wagner_2007,
-	author = {Daniel Wagner and Dieter Schmalstieg},
-	title =  {ARToolKitPlus for Pose Tracking on Mobile Devices},
-	booktitle = {Proceedings of 12th Computer Vision Winter Workshop (CVWW'07)}
-	month = {February},
-	year = {2007},
-}
-
-The normalized cross correlation from OpenCV is used:
---------------------------------------------------------------------------------
-
-The source code for the wrapper is in the normxcorr2_src/ subdirectory and 
-should compile out of the box when using CMake, OpenCV and Matlab under both 
-windows and linux.
-
-For those who do not want to use CMake, the following MATLAB command should do:
-(example for Visual Studio 2013 on a x64 machine)
- mex -I'path\to\opencv\build\include\opencv' ...
-     -I'path\to\opencv\build\include' ...
-     path\to\opencv\build\x64\vc12\lib\opencv_core2411.lib ...   
-     path\to\opencv\build\x64\vc12\lib\opencv_imgproc2411.lib ...
-     normxcorr2_mex.cpp
+<body>
+	<hr />
+	<!-- start page -->
+	<div id="page">
+		<!-- start content -->
+		<div id="content">
+			<div class="post">
+				<h1 class="title">Automatic Camera Calibration</h1>
+				<div class="entry">
+					This page accompanies our paper <a href="/documents/ferstl/bmvc15_final.pdf">[1]</a> on
+					automatic calibration of depth cameras. The presented calibration
+					target and automatic feature extraction are not limited to depth
+					cameras but can also be used for conventional cameras. The provided
+					code is designed to be used as an addon to the widely known camera
+					calibration toolbox of <a
+						href="http://www.vision.caltech.edu/bouguetj/calib_doc/index.html">Jean-Yves
+						Bouguet</a>
+				</div>
+				<h2 class="title">Calibration Target</h2>
+				<div class="entry">
+					The used calibration target consists of a central marker and
+					circular patterns:<br></br> <img alt="Calibration Target"
+						src="calibration/struc_patt.png" width=300px><br></br> Our
+					automatic feature detection starts by searching for the central
+					marker and then iteratively refining the circular markers around
+					the central marker (depticted as black dashed line). Compared to
+					standard checkerboard targets, our methods has the following
+					advantages:
+					<ul>
+						<li>Target does not have to be visible as a whole</li>
+						<li>Detection of groups of circular patterns is more robust
+							to perspective distortions than line crossings</li>
+						<li>Feature detection is more accurate for low-resolution
+							cameras (like ToF or Event Cameras)</li>
+					</ul>
+				</div>
+				<h2 class="title">Example Detection Result</h2>
+				<div class="entry">
+					The following images show the result of the automatic feature
+					detection on two exemplary images from the paper. The calibration
+					target is detected in the gray value image and reprojected to the
+					corresponding depth image from a Microsoft Kinect v2.0: <br></br> <img
+						alt="Detection result gray image"
+						src="calibration/detection_rgb.jpg" height=270px> <img
+						alt="Detection result projected to depth image"
+						src="calibration/projection_depth.jpg" height=270px><br></br>
+				</div>
+			</div>
+			<div class="post">
+				<h2 class="title">How to use the code</h2>
+				<div class="entry">
+					The provided source code should be used as an addon the the Bouguet
+					Camera Calibration Toolbox. Installation therefore amounts to:
+					<ul>
+						<li>Downloading of the latest toolbox from <a
+							href="http://www.vision.caltech.edu/bouguetj/calib_doc/index.html">[1]</a></li>
+						<li>Downloading and extracting of our addon in the same folder</li>
+						<li>Running <i>autocalibration.m</i> and selecting the images
+							from <i>testdata/image_xxx.jpg</i> starts the mono calibration of
+							the camera.
+						</li>
+						<li>The calibration target can be created using the <i>make_target.m</i> function. Remember to measure it after printing! </li>
+						<li>To use it with the GUI of the Toolbox, simply start <i>calib_gui_normal_auto.m</i>
+							which asks for the target parameters interactively.</li>
+						<li>Stereo calibration requires the use of <i>calib_stereo_auto.m</i> instead of <i>calib_stereo.m</i> because our method does not detect all grid points in all images! </li>
+					</ul>
+					The following parameters have to be set:
+					<ul>
+						<li><i>parameters.approx_marker_width_pixels:</i> Approximate
+							minimum size of the center marker in pixels</li>
+						<li><i>parameters.grid_width_mm:</i> Grid width (distance
+							between points) in millimeters</li>
+						<li><i>parameters.checker_aspect_ratio:</i> Aspect ratio (=
+							height/width)</li>
+						<li><i>parameters.grid_coordinates_h:</i>Horizontal grid
+							dimensions (i.e. -11:11)</li>
+						<li><i>parameters.grid_coordinates_v:</i> Vertical grid
+							dimensions (i.e. -18:16)</li>
+					</ul>
+					The target can be created by using the function <i>function template = make_target (grid_width_pixels, grid_width_mm, grid_coordinates_h, grid_coordinates_v)</i>, i.e.:
+					<i>target = make_target(240,5,-18:18,-10:10);</i>
+				</div>
+			</div>
+			<div class="post">
+				<h2 class="title">How to cite the materials on this website</h2>
+				<div class="entry">
+					We grant permission to use the code on this website. If you if you
+					use the code in your own publication, we request that you cite our
+					paper <a href="#publications">[1]</a>. If you want to cite this
+					website, please use the URL
+					"http://rvlab.icg.tugraz.at/calibration/".
+				</div>
+			</div>
+			<div class="post">
+				<h2 class="title">Software Download</h2>
+				<div class="entry">
+					Matlab code for automatic feature detection <a
+						href="calibration/addon_bouguet_0.1.zip"
+						onclick="var that=this;
+                                _gaq.push(['_trackEvent','Download','ZIP', this.href]);
+                                setTimeout(function(){location.href=that.href;},200);
+                                return false;">
+						addon_bouguet.zip</a>. This also includes the tool to make the calibration target.
+				</div>
+			</div>
+			<div class="post">
+				<h2 class="title">Version History</h2>
+				<div class="entry">
+					<ul>
+						<li> v 0.1: Initial Release (2015-07-27)
+					</ul>
+				</div>
+			</div>
+			<div class="publications" id="publications">
+				<h2 class="title">References</h2>
+				<?php
+				$_SESSION['project']='calibration';
+					require_once('../../project_page/bib/bibtex2html.php');
+					bibfile2html('../../project_page/bib/bibliography_conferences.bib',array(	
+														 'inproceedings' => 'Conference Papers'), false, false, false);
+    				unset($_SESSION['project']);
+				?>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
