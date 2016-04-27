@@ -51,14 +51,13 @@
 			</div>
 			<br><br>
 			<div class="post">
-				<h2 class="title">How to use the code</h2>
 				<div class="entry">
-					The provided source code should be used as an addon the the Bouguet
+					The provided source code is used as an addon the the Bouguet
 					Camera Calibration Toolbox. Installation therefore amounts to:
 					<ul>
-						<li>Downloading of the latest toolbox from <a
-							href="http://www.vision.caltech.edu/bouguetj/calib_doc/index.html">[1]</a></li>
-						<li>Downloading and extracting of our addon in the same folder</li>
+						<li>Clone the calibration toolbox from GitHub <a
+							href="https://github.com/RobVisLab/camera_calibration">[GitLab Link]</a></li>
+						<li>With the download_script.sh the Bouguet Toolbox can be updated to the latest version</li>
 						<li>Running <i>autocalibration.m</i> and selecting the images
 							from <i>testdata/image_xxx.jpg</i> starts the mono calibration of
 							the camera.
@@ -67,6 +66,7 @@
 						<li>To use it with the GUI of the Toolbox, simply start <i>calib_gui_normal_auto.m</i>
 							which asks for the target parameters interactively.</li>
 						<li>Stereo calibration requires the use of <i>calib_stereo_auto.m</i> instead of <i>calib_stereo.m</i> because our method does not detect all grid points in all images! </li>
+						
 					</ul>
 					The following parameters have to be set:
 					<ul>
@@ -84,6 +84,7 @@
 					The target can be created by using the function <i>function template = make_target (grid_width_pixels, grid_width_mm, grid_coordinates_h, grid_coordinates_v)</i>, i.e.:
 					<i>target = make_target(240,5,-18:18,-10:10);</i>
 				</div>
+			</div>
 			</div>
 			<br><br>
 			<div class="post">
