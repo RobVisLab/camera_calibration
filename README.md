@@ -15,7 +15,9 @@
 					target and automatic feature extraction are not limited to depth
 					cameras but can also be used for conventional cameras. The provided
 					code is designed to be used as an addon to the widely known camera
-					calibration toolbox of <a>href="http://www.vision.caltech.edu/bouguetj/calib_doc/index.html">Jean-Yves Bouguet</a>
+					calibration toolbox of <a
+					href="http://www.vision.caltech.edu/bouguetj/calib_doc/index.html">Jean-Yves
+					Bouguet</a>
 				</div>
 				<h2 class="title">Calibration Target</h2>
 				<div class="entry">
