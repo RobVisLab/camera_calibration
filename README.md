@@ -10,7 +10,7 @@
 			<div class="post">
 				<h1 class="title">Automatic Camera Calibration</h1>
 				<div class="entry">
-					This page accompanies our paper <a target="_blank" href="http://rvlab.icg.tugraz.at/documents/ferstl/bmvc15_final.pdf">[1]</a> on
+					This page accompanies our paper <a target="_blank" href="https://rvlab.icg.tugraz.at/documents/ferstl/bmvc15_final.pdf">[1]</a> on
 					automatic calibration of depth cameras. The presented calibration
 					target and automatic feature extraction are not limited to depth
 					cameras but can also be used for conventional cameras. The provided
@@ -23,7 +23,7 @@
 				<div class="entry">
 					The used calibration target consists of a central marker and
 					circular patterns:<br></br> <img alt="Calibration Target"
-						src="http://rvlab.icg.tugraz.at/project_page/project_tofusion/calibration/struc_patt.png" width=300px><br></br> Our
+					src="https://rvlab.icg.tugraz.at/project_page/project_tofusion/calibration/struc_patt.png" width=300px><br></br> Our
 					automatic feature detection starts by searching for the central
 					marker and then iteratively refining the circular markers around
 					the central marker (depticted as black dashed line). Compared to
@@ -43,8 +43,8 @@
 					detection on two exemplary images from the paper. The calibration
 					target is detected in the gray value image and reprojected to the
 					corresponding depth image from a Microsoft Kinect v2.0: <br></br> <img
-						alt="Detection result gray image"	src="http://rvlab.icg.tugraz.at/project_page/project_tofusion/calibration/detection_rgb.jpg" height=270px> <img
-						alt="Detection result projected to depth image"	src="http://rvlab.icg.tugraz.at/project_page/project_tofusion/calibration/projection_depth.jpg" height=270px><br></br>
+						alt="Detection result gray image"	src="https://rvlab.icg.tugraz.at/project_page/project_tofusion/calibration/detection_rgb.jpg" height=270px> <img
+						alt="Detection result projected to depth image"	src="https://rvlab.icg.tugraz.at/project_page/project_tofusion/calibration/projection_depth.jpg" height=270px><br></br>
 				</div>
 			</div>
 			<br><br>
@@ -92,7 +92,7 @@
 					use the code in your own publication, we request that you cite our
 					paper <a href="#publications">[1]</a>. If you want to cite this
 					website, please use the URL
-					"http://rvlab.icg.tugraz.at/calibration/".
+					"https://rvlab.icg.tugraz.at/calibration/".
 				</div>
 			</div>
 			<br><br>
@@ -100,11 +100,11 @@
 				<h2 class="title">References</h2>
 					<ol>
 					<li>
-					 <a target="_blank" target="_blank" class="title" href="http://rvlab.icg.tugraz.at/documents/ferstl/bmvc15_final.pdf">Learning Depth Calibration of Time-of-Flight Cameras</a>
+					 <a target="_blank" target="_blank" class="title" href="https://rvlab.icg.tugraz.at/documents/ferstl/bmvc15_final.pdf">Learning Depth Calibration of Time-of-Flight Cameras</a>
 					&nbsp;
-					  <a target="video" href="https://youtu.be/RM78k8M2qiw" ><img src="http://rvlab.icg.tugraz.at/images/youtube.png" height=15px/></a>
-					  <a target="_blank" class="title" href="http://rvlab.icg.tugraz.at/documents/ferstl/bmvc15_poster.pdf">[supp]</a> <br>
-					<span class="authors"><a href=http://rvlab.icg.tugraz.at/personal_page/personal_page_ferstl.html>David Ferstl</a>, <a href=http://rvlab.icg.tugraz.at/personal_page/personal_page_christian.htm>Christian Reinbacher</a>, <a href=http://rvlab.icg.tugraz.at/personal_page/personal_page_gernot.html>Gernot Riegler</a>, Matthias Ruether, and <a href=http://www.icg.tugraz.at/Members/author/bischof target=_blank>Horst Bischof</a></span><br>
+					  <a target="video" href="https://youtu.be/RM78k8M2qiw" ><img src="https://rvlab.icg.tugraz.at/images/youtube.png" height=15px/></a>
+					  <a target="_blank" class="title" href="https://rvlab.icg.tugraz.at/documents/ferstl/bmvc15_poster.pdf">[supp]</a> <br>
+					<span class="authors"><a href=https://rvlab.icg.tugraz.at/personal_page/personal_page_ferstl.html>David Ferstl</a>, <a href=https://rvlab.icg.tugraz.at/personal_page/personal_page_christian.htm>Christian Reinbacher</a>, <a href=https://rvlab.icg.tugraz.at/personal_page/personal_page_gernot.html>Gernot Riegler</a>, Matthias Ruether, and <a href=http://www.icg.tugraz.at/Members/author/bischof target=_blank>Horst Bischof</a></span><br>
 					In <span class="in">Proceedings of British Machine Vision Conference, (BMVC)</span>, <span class="year">2015</span> <br/> Abstract </a><br />
 					<div class="abstract" id="ferstl2015a" style="display: none">
 					We present a novel method for an automatic calibration of modern consumer
