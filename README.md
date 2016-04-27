@@ -51,13 +51,14 @@
 			</div>
 			<br><br>
 			<div class="post">
+			<h2 class="title">How to use the code</h2>
 				<div class="entry">
 					The provided source code is used as an addon the the Bouguet
 					Camera Calibration Toolbox. Installation therefore amounts to:
 					<ul>
 						<li>Clone the calibration toolbox from GitHub <a
 							href="https://github.com/RobVisLab/camera_calibration">[GitLab Link]</a></li>
-						<li>With the download_script.sh the Bouguet Toolbox can be updated to the latest version</li>
+						<li>With the <i>download_script.sh</i> the Bouguet Toolbox can be updated to the latest version</li>
 						<li>Running <i>autocalibration.m</i> and selecting the images
 							from <i>testdata/image_xxx.jpg</i> starts the mono calibration of
 							the camera.
