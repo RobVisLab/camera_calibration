@@ -15,9 +15,7 @@
 					target and automatic feature extraction are not limited to depth
 					cameras but can also be used for conventional cameras. The provided
 					code is designed to be used as an addon to the widely known camera
-					calibration toolbox of <a
-						href="http://www.vision.caltech.edu/bouguetj/calib_doc/index.html">Jean-Yves
-						Bouguet</a>
+					calibration toolbox of <a>href="http://www.vision.caltech.edu/bouguetj/calib_doc/index.html">Jean-Yves Bouguet</a>
 				</div>
 				<h2 class="title">Calibration Target</h2>
 				<div class="entry">
@@ -43,10 +41,8 @@
 					detection on two exemplary images from the paper. The calibration
 					target is detected in the gray value image and reprojected to the
 					corresponding depth image from a Microsoft Kinect v2.0: <br></br> <img
-						alt="Detection result gray image"
-						src="http://rvlab.icg.tugraz.at/project_page/project_tofusion/calibration/detection_rgb.jpg" height=270px> <img
-						alt="Detection result projected to depth image"
-						src="http://rvlab.icg.tugraz.at/project_page/project_tofusion/calibration/projection_depth.jpg" height=270px><br></br>
+						alt="Detection result gray image"	src="http://rvlab.icg.tugraz.at/project_page/project_tofusion/calibration/detection_rgb.jpg" height=270px> <img
+						alt="Detection result projected to depth image"	src="http://rvlab.icg.tugraz.at/project_page/project_tofusion/calibration/projection_depth.jpg" height=270px><br></br>
 				</div>
 			</div>
 			<br><br>
@@ -67,7 +63,6 @@
 						<li>To use it with the GUI of the Toolbox, simply start <i>calib_gui_normal_auto.m</i>
 							which asks for the target parameters interactively.</li>
 						<li>Stereo calibration requires the use of <i>calib_stereo_auto.m</i> instead of <i>calib_stereo.m</i> because our method does not detect all grid points in all images! </li>
-						
 					</ul>
 					The following parameters have to be set:
 					<ul>
