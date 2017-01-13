@@ -1,6 +1,7 @@
 function [corners_col, corners_row] = findMarkerCorners(image, corner_threshold, min_area, intensity_threshold)
 
     image = im2double(image);
+    image = image./max(image(:));
     
     if nargin < 4 || isempty(intensity_threshold),
         pattern_bwimage = adaptivethreshold(image, min_area/10);
